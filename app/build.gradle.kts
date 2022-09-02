@@ -29,7 +29,7 @@ android {
     }
     buildFeatures {
         compose = true
-//        viewBinding = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.2.0"
@@ -48,6 +48,10 @@ dependencies {
     implementation("androidx.compose.ui:ui:1.1.0")
     implementation("androidx.compose.ui:ui-tooling-preview:1.1.0")
     implementation("androidx.compose.material3:material3:1.0.0-alpha11")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
